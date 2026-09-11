@@ -1,0 +1,122 @@
+@model MerceariaMVC.Models.Cliente
+
+@{
+    ViewData["Title"] = "Excluir";
+}
+
+<div class="delete-card">
+
+    <p class="eyebrow">
+
+        ATENÇÃO
+
+    </p>
+
+    <h1 class="page-title">
+
+        Excluir cliente?
+
+    </h1>
+
+    <p class="page-subtitle mb-4">
+
+        Esta ação removerá o registro permanentemente.
+
+    </p>
+
+
+    <div class="detail-row">
+
+        <div class="detail-label">
+
+            Nome
+
+        </div>
+
+        <div class="detail-value">
+
+            @Model.Nome
+
+        </div>
+
+    </div>
+
+
+    <div class="detail-row">
+
+        <div class="detail-label">
+
+            E-mail
+
+        </div>
+
+        <div class="detail-value">
+
+            @Model.Email
+
+        </div>
+
+    </div>
+
+
+    <div class="detail-row">
+
+        <div class="detail-label">
+
+            Idade
+
+        </div>
+
+        <div class="detail-value">
+
+            @Model.Idade anos
+
+        </div>
+
+    </div>
+
+
+    <div class="detail-row">
+
+        <div class="detail-label">
+
+            Status
+
+        </div>
+
+        <div class="detail-value">
+
+            @(Model.Ativo ? "Ativo" : "Inativo")
+
+        </div>
+
+    </div>
+
+
+    <form asp-action="Delete"
+          class="form-actions">
+
+        <input type="hidden"
+               asp-for="IdCliente" />
+
+
+        <button type="submit"
+                class="btn btn-danger-custom">
+
+            <i class="bi bi-trash"></i>
+
+            Sim, excluir
+
+        </button>
+
+
+        <a asp-action="Index"
+           class="btn btn-secondary-custom">
+
+            Cancelar
+
+        </a>
+
+    </form>
+
+</div>

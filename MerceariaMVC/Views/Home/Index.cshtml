@@ -1,0 +1,179 @@
+﻿@{
+    ViewData["Title"] = "Início";
+}
+
+<section class="hero">
+
+    <div>
+
+        <p class="eyebrow">
+
+            ✦ GESTÃO DESCOMPLICADA
+
+        </p>
+
+        <h1>
+
+            Sua mercearia,
+
+            <br />
+
+            <em>mais inteligente.</em>
+
+        </h1>
+
+
+        <p class="hero-text">
+
+            Tenha produtos, clientes e informações importantes
+            organizados em um só lugar.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a asp-controller="Produto"
+               asp-action="Index"
+               class="btn btn-dark-custom">
+
+                Gerenciar produtos
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+
+            <a asp-controller="Cliente"
+               asp-action="Index"
+               class="btn btn-light-custom">
+
+                Ver clientes
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-art">
+
+        <div class="circle c1"></div>
+
+        <div class="circle c2"></div>
+
+        <i class="bi bi-basket2-fill"></i>
+
+        <span class="floating f1">🍎</span>
+
+        <span class="floating f2">🥬</span>
+
+        <span class="floating f3">🥖</span>
+
+    </div>
+
+</section>
+
+
+<section class="quick-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <p class="eyebrow">
+
+                ACESSO RÁPIDO
+
+            </p>
+
+            <h2>
+
+                O que você deseja fazer?
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="row g-4">
+
+        <div class="col-md-6">
+
+            <a asp-controller="Produto"
+               asp-action="Index"
+               class="quick-card product-card">
+
+                <div class="quick-icon">
+
+                    <i class="bi bi-box-seam"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+
+                        Produtos
+
+                    </h3>
+
+                    <p>
+
+                        Cadastre, consulte e gerencie seu estoque.
+
+                    </p>
+
+                </div>
+
+
+                <i class="bi bi-arrow-up-right arrow"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="col-md-6">
+
+            <a asp-controller="Cliente"
+               asp-action="Index"
+               class="quick-card client-card">
+
+                <div class="quick-icon">
+
+                    <i class="bi bi-people"></i>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+
+                        Clientes
+
+                    </h3>
+
+                    <p>
+
+                        Organize e acompanhe seus clientes.
+
+                    </p>
+
+                </div>
+
+
+                <i class="bi bi-arrow-up-right arrow"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>

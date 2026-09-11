@@ -1,0 +1,160 @@
+@model MerceariaMVC.Models.Cliente
+
+@{
+    ViewData["Title"] = "Cadastrar Cliente";
+}
+
+<div class="top-bar">
+
+    <div>
+
+        <p class="eyebrow">
+
+            CADASTRO
+
+        </p>
+
+        <h1 class="page-title">
+
+            Cadastrar cliente
+
+        </h1>
+
+        <p class="page-subtitle">
+
+            Preencha as informações abaixo com atenção.
+
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="form-card">
+
+    <form asp-action="Create">
+
+        <div asp-validation-summary="ModelOnly"
+             class="text-danger">
+        </div>
+
+
+        <div class="form-group">
+
+            <label asp-for="Nome"
+                   class="form-label">
+
+                Nome completo
+
+            </label>
+
+
+            <input asp-for="Nome"
+                   class="form-control"
+                   placeholder="Digite o nome" />
+
+            <span asp-validation-for="Nome"
+                  class="text-danger">
+
+            </span>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label asp-for="Email"
+                   class="form-label">
+
+                E-mail
+
+            </label>
+
+
+            <input asp-for="Email"
+                   class="form-control"
+                   placeholder="email@exemplo.com" />
+
+            <span asp-validation-for="Email"
+                  class="text-danger">
+
+            </span>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label asp-for="Idade"
+                   class="form-label">
+
+                Idade
+
+            </label>
+
+
+            <input asp-for="Idade"
+                   class="form-control"
+                   placeholder="0" />
+
+            <span asp-validation-for="Idade"
+                  class="text-danger">
+
+            </span>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <div class="form-check form-switch p-0">
+
+                <input asp-for="Ativo"
+                       class="form-check-input me-2" />
+
+                <label asp-for="Ativo"
+                       class="form-label mb-0">
+
+                    Cliente ativo
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-actions">
+
+            <button type="submit"
+                    class="btn btn-add">
+
+                <i class="bi bi-check-lg"></i>
+
+                Salvar cadastro
+
+            </button>
+
+
+            <a asp-action="Index"
+               class="btn btn-secondary-custom">
+
+                Cancelar
+
+            </a>
+
+        </div>
+
+    </form>
+
+</div>
+
+
+@section Scripts {
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+}

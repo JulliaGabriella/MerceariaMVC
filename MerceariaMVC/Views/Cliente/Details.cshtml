@@ -1,0 +1,120 @@
+@model MerceariaMVC.Models.Cliente
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<div class="top-bar">
+
+    <div>
+
+        <p class="eyebrow">
+
+            INFORMAÇÕES
+
+        </p>
+
+        <h1 class="page-title">
+
+            Detalhes do cliente
+
+        </h1>
+
+    </div>
+
+</div>
+
+
+<div class="detail-card">
+
+    <div class="detail-row">
+
+        <div class="detail-label">
+
+            Nome
+
+        </div>
+
+        <div class="detail-value">
+
+            @Model.Nome
+
+        </div>
+
+    </div>
+
+
+    <div class="detail-row">
+
+        <div class="detail-label">
+
+            E-mail
+
+        </div>
+
+        <div class="detail-value">
+
+            @Model.Email
+
+        </div>
+
+    </div>
+
+
+    <div class="detail-row">
+
+        <div class="detail-label">
+
+            Idade
+
+        </div>
+
+        <div class="detail-value">
+
+            @Model.Idade anos
+
+        </div>
+
+    </div>
+
+
+    <div class="detail-row">
+
+        <div class="detail-label">
+
+            Status
+
+        </div>
+
+        <div class="detail-value">
+
+            @(Model.Ativo ? "Ativo" : "Inativo")
+
+        </div>
+
+    </div>
+
+
+    <div class="form-actions">
+
+        <a asp-action="Edit"
+           asp-route-id="@Model.IdCliente"
+           class="btn btn-add">
+
+            <i class="bi bi-pencil"></i>
+
+            Editar
+
+        </a>
+
+
+        <a asp-action="Index"
+           class="btn btn-secondary-custom">
+
+            Voltar
+
+        </a>
+
+    </div>
+
+</div>
