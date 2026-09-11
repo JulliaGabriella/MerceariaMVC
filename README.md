@@ -147,7 +147,7 @@ Também é possível executar os testes diretamente pelo **Test Explorer do Visu
 ## Clone o projeto
 
 ```bash
-git clone URL_DO_REPOSITORIO
+https://github.com/JulliaGabriella/MerceariaMVC.git
 ```
 
 ---
