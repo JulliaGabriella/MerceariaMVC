@@ -121,7 +121,7 @@ Também é possível executar os testes diretamente pelo **Test Explorer do Visu
 ## 🏠 Tela Inicial
 
 <p align="center">
-  <img src="imagens/TelaInicial.png" width="800">
+  <img src="MerceariaMVC/imagens/TelaInicial.png" width="800">
 </p>
 
 ---
@@ -129,7 +129,7 @@ Também é possível executar os testes diretamente pelo **Test Explorer do Visu
 ## 👤 Clientes
 
 <p align="center">
-  <img src="imagens/TelaClientes.png" width="800">
+  <img src="MerceariaMVC/imagens/TelaClientes.png" width="800">
 </p>
 
 ---
@@ -137,7 +137,7 @@ Também é possível executar os testes diretamente pelo **Test Explorer do Visu
 ## 📦 Produtos
 
 <p align="center">
-  <img src="imagens/TelaProdutos.png" width="800">
+  <img src="MerceariaMVC/imagens/TelaProdutos.png" width="800">
 </p>
 
 # ▶️ Como Executar
